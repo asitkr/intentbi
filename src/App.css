@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: skyblue;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.cartCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+/* .cartWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+} */
+
+.productImage, .cart__image {
+  height: 80px;
+}
+
+.add__to__cart, .remove__btn, .checkout__btn {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: skyblue;
+  cursor: pointer;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.add__to__cart:hover, .remove__btn:hover, .checkout__btn:hover {
+  background: #24a2d4;
+}
+
+.checkout__wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__checkout {
+  width: 500px;
+  background: skyblue;
+}
+
+.fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.fields input {
+  width: 240px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #064964;
+  padding: 8px;
+}
+
+.fields textarea {
+  width: 240px;
+  height: 50px;
+  resize: vertical;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #064964;
+  padding: 8px;
+}
+
+.fields select {
+  width: 240px;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #064964;
+  padding: 8px;
+}
+
+.place__order__btn {
+  font-size: 18px;
+  font-weight: 500;
+  color: #064964;
+  background: #fff;
+  cursor: pointer;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.place__order__btn:hover {
+  color: #022a3a;
+  background-color: #d1c7c7;
+}
+
+.congrats {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #064964;
+}
+
+@media screen and (max-width: 769px) {
+  .cartCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cartCard h5 {
+    padding: 10px 0;
+  }
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    text-align: none;
+  }
+
+  .fields label {
+    margin: 0 0 10px;
+  }
+
+  .form__checkout {
+    width: 80%;
+    padding: 10px 0;
+  }
+}
